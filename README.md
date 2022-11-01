@@ -28,6 +28,7 @@ Main results on COCO-val:
 
 
 ## ONNXRuntime Demo
+For example:
 
 ```shell
 python3 openvino_inference.py --weight weights/xml/yolo_free_large.xml -i test_image.jpg -s 0.3 -size 640
