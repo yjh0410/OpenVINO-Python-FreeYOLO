@@ -1,0 +1,13 @@
+torch
+
+opencv-python
+
+scipy
+
+matplotlib
+
+numpy
+
+openvino
+
+loguru
