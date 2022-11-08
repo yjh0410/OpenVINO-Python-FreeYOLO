@@ -22,13 +22,13 @@ from utils.vis_tools import visualize
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser("openvino inference sample")
-    parser.add_argument("-m", "--model", type=str, default="weights/openvino/xml/yolo_free_large.xml",
+    parser.add_argument("-m", "--model", type=str, default="weights/openvino/xml/yolo_free_tiny/yolo_free_tiny.xml",
                         help="Input your XML model.")
     parser.add_argument("-i", "--image_path", type=str, default='test_image.jpg',
                         help="Path to your input image.")
     parser.add_argument("-o", "--output_dir", type=str, default='results/',
                         help="Path to your output directory.")
-    parser.add_argument("-s", "--score_thr", type=float, default=0.3,
+    parser.add_argument("-s", "--score_thr", type=float, default=0.5,
                         help="Score threshould to filter the result.")
     parser.add_argument('-d', '--device', default='CPU', type=str,
                         help='Optional. Specify the target device to infer on; CPU, GPU, \
