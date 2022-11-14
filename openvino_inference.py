@@ -28,7 +28,7 @@ def parse_args() -> argparse.Namespace:
                         help="Path to your input image.")
     parser.add_argument("-o", "--output_dir", type=str, default='results/',
                         help="Path to your output directory.")
-    parser.add_argument("-s", "--score_thr", type=float, default=0.5,
+    parser.add_argument("-s", "--score_thr", type=float, default=0.35,
                         help="Score threshould to filter the result.")
     parser.add_argument('-d', '--device', default='CPU', type=str,
                         help='Optional. Specify the target device to infer on; CPU, GPU, \
